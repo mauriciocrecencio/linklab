@@ -1,0 +1,48 @@
+@import '@/app/styles/constants.scss', '@/app/styles/_layout.scss';
+
+.c-header {
+  height: 100px;
+  margin: auto;
+  max-width: 1091px;
+  width: 100%;
+  @include desktop-md-only {
+    max-width: 1230px;
+  }
+}
+
+.c-nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 49px 30px;
+  nav {
+    flex: 1;
+  }
+  @include desktop-sm-only {
+    margin: 49px 0px;
+  }
+}
+
+.c-budget-button {
+  @include flex-center;
+  background-color: $highlight-opacity-color;
+  border-radius: 7px;
+  color: $white-color;
+  padding: 12px 18px;
+
+  span {
+    margin-left: 6px;
+  }
+  &__mobile {
+    background-color: $orange-color;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    padding: 9px;
+ }
+}
+
+.l-margin-left {
+  margin-left: 14px;
+}

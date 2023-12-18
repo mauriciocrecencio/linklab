@@ -1,0 +1,20 @@
+@import '@/app/styles/constants.scss','@/app/styles/_layout.scss';
+
+.c-dots-image {
+  margin-top: 160px;
+  @include desktop-sm-only {
+    margin: 0px;
+    object-fit: cover;
+    width: 166px;
+  }
+}
+
+.l-position-image {
+  display: flex;
+  justify-content: center;
+  @include desktop-sm-only {
+    position: absolute;
+    right: 8px;
+    top: -86px;
+  }
+}

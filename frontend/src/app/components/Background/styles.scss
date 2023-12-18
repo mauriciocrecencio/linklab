@@ -1,0 +1,30 @@
+@import '@/app/styles/constants.scss', '@/app/styles/_layout.scss';
+
+.bg-highlight {
+  background-color: $highlight-background-color;
+  // Enfrentei um bug que estava com um espaço em branco, parecia um margin-top
+  // Somente resolvei aplicando uma borda com a mesma cor do background
+  border-top: solid $highlight-background-color;
+  height: 890px;
+  @include desktop-sm-only {
+    height: 500px;
+    // padding: 0 12%;
+    position: relative;
+  }
+  @include desktop-md-only {
+    padding: 0 160px;
+  }
+  z-index: -10;
+}
+
+.bg-white {
+  background-color: $white-color;
+  // Enfrentei um bug que estava com um espaço em branco, parecia um margin-top
+  // Somente resolvei aplicando uma borda com a mesma cor do background
+  border-top: solid $white-color;
+  height: 890px;
+  @include desktop-md-only {
+    padding: 0 160px;
+  }
+
+}

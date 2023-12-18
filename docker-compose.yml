@@ -1,0 +1,20 @@
+version: '3'
+services:
+  backend:
+    build:
+      context: ./backend  # Caminho para o diretório do Dockerfile
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./backend:/app  # Mapeia o diretório local do backend para o diretório de trabalho do contêiner
+    environment:
+      - NODE_ENV=production  # Defina a variável de ambiente NODE_ENV conforme necessário
+  frontend:
+    build:
+      context: ./frontend  # Caminho para o diretório do Dockerfile
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend 

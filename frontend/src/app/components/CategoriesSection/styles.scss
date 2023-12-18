@@ -1,0 +1,25 @@
+@import '@/app/styles/constants.scss','@/app/styles/_layout.scss';
+
+$orange-background-color: #F5643D;
+$white-color: #FFFFFF;
+
+.l-categories-container {
+  display: flex;
+  flex-direction: column;
+  margin: 34px 14px;
+  >div:nth-child(even) {
+    background-color: $orange-background-color;
+    h3, span {
+      color: $white-color;
+    }
+  @include desktop-sm-only {
+    height: 540px;
+  }
+  }
+
+  @include desktop-sm-only {
+    flex-direction: row;
+    margin-top: -320px;
+    justify-content: center;
+  }
+}

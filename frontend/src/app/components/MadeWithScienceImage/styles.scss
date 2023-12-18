@@ -1,0 +1,13 @@
+@import '@/app/styles/layout.scss';
+
+.l-image-position {
+  display: block;
+  margin: 76px auto;
+
+  @include desktop-sm-only {
+    position: absolute;
+    left: 47px;
+    top: 210px;
+    z-index: -9;
+  }
+}

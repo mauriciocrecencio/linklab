@@ -1,0 +1,3 @@
+export enum WINDOW_SIZE {
+  DESKTOP_SMALL = 1024
+}

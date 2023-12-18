@@ -1,0 +1,40 @@
+@import '@/app/styles/constants.scss','@/app/styles/_layout.scss';
+
+$title-color: #323351;
+
+.l-max-width {
+  margin: auto;
+  max-width: 1230px;
+}
+
+.l-flex-products-container {
+  margin: 40px 24px 0;
+  > :not(:first-child) {
+    margin-top: 42px;
+  }
+  display: flex;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+
+  @include desktop-sm-only {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0px;
+    > :not(:first-child) {
+    margin-top: 0px;
+  }
+  }
+
+}
+
+.c-products-title {
+  color: $title-color;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 31px 0 40px 24px;
+  @include desktop-sm-only {
+    margin-left: 0px;
+  }
+}
