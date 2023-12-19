@@ -17,4 +17,4 @@ COPY src/ ./src
 EXPOSE 3001
 
 # Comando para iniciar o aplicativo (ajuste conforme necessário)
-CMD ["npm", "start:dev"]
+CMD ["npm", "start"]

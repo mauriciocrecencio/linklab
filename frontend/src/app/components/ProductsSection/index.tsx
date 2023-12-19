@@ -15,7 +15,7 @@ export const ProductsSection = () => {
       <h2 className="c-products-title">PRODUTOS</h2>
       <section className="l-flex-products-container">
         {products!.map((product: Product) => (
-          <ProductCard product={product} />
+          <ProductCard key={product.name} product={product} />
         ))}
       </section>
     </section>

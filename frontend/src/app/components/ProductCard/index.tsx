@@ -13,8 +13,8 @@ export const ProductCard = ({ product }: Props) => (
       height={150}
       width={320}
       className="l-position-product-image"
-      src={DefaultProductImage}
-      alt="Default product image"
+      src={product.image || DefaultProductImage}
+      alt="Product image"
     />
     <div className="l-product-info-flex">
       <div>
